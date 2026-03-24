@@ -1,12 +1,12 @@
-# Coetrappers Newsletter Connect
+# Codetrappers Newsletter Connect
 
-`coetrappers-newsletter-connect` is a wordpress plugin for the Coetrappers project set.
+`codetrappers-newsletter-connect` is a wordpress plugin for the Codetrappers project set.
 Starter plugin for routing subscribers from WordPress forms into newsletter platforms.
 The codebase is scaffolded to be a clean starting point, not a complete production feature.
 
 ## Project Summary
 
-- Slug: `coetrappers-newsletter-connect`
+- Slug: `codetrappers-newsletter-connect`
 - Type: WordPress plugin
 - Focus: newsletter, marketing, forms
 
@@ -32,8 +32,8 @@ The codebase is scaffolded to be a clean starting point, not a complete producti
 
 ## How To Extend It
 
-- Activate `coetrappers-newsletter-connect` from the Plugins screen.
-- Use `coetrappers-newsletter-connect.php` as the primary bootstrap file for extension work.
+- Activate `codetrappers-newsletter-connect` from the Plugins screen.
+- Use `codetrappers-newsletter-connect.php` as the primary bootstrap file for extension work.
 - Keep feature logic inside dedicated classes rather than expanding the root file.
 
 ## Development Notes

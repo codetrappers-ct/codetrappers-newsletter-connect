@@ -1,12 +1,12 @@
 <?php
-namespace Coetrappers\CoetrappersNewsletterConnect;
+namespace Codetrappers\CodetrappersNewsletterConnect;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class CoetrappersNewsletterConnectPlugin {
-	const OPTION_KEY = 'coetrappers-newsletter-connect_settings';
+class CodetrappersNewsletterConnectPlugin {
+	const OPTION_KEY = 'codetrappers-newsletter-connect_settings';
 
 	public function boot() {
 		add_action( 'init', array( $this, 'register_post_meta' ) );
@@ -17,7 +17,7 @@ class CoetrappersNewsletterConnectPlugin {
 	public function register_post_meta() {
 		register_post_meta(
 			'',
-			'_coetrappers-newsletter-connect_status',
+			'_codetrappers-newsletter-connect_status',
 			array(
 				'show_in_rest'      => true,
 				'single'            => true,
@@ -63,7 +63,7 @@ class CoetrappersNewsletterConnectPlugin {
 
 		$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
 
-		if ( ! $screen || 'settings_page_coetrappers-newsletter-connect' === $screen->id ) {
+		if ( ! $screen || 'settings_page_codetrappers-newsletter-connect' === $screen->id ) {
 			return;
 		}
 
@@ -75,7 +75,7 @@ class CoetrappersNewsletterConnectPlugin {
 
 		printf(
 			'<div class="notice notice-info"><p>%s</p></div>',
-			esc_html__( 'Coetrappers Newsletter Connect starter is active. Extend the bootstrap logic in includes/class-coetrappers-newsletter-connect.php.', 'coetrappers-newsletter-connect' )
+			esc_html__( 'Codetrappers Newsletter Connect starter is active. Extend the bootstrap logic in includes/class-codetrappers-newsletter-connect.php.', 'codetrappers-newsletter-connect' )
 		);
 	}
 }

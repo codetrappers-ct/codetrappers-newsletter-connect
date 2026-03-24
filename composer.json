@@ -1,5 +1,5 @@
 {
-  "name": "coetrappers/coetrappers-newsletter-connect",
+  "name": "codetrappers/codetrappers-newsletter-connect",
   "description": "Starter plugin for routing subscribers from WordPress forms into newsletter platforms.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Coetrappers\\\\CoetrappersNewsletterConnect\\\\": "includes/"
+      "Codetrappers\\\\CodetrappersNewsletterConnect\\\\": "includes/"
     }
   }
 }
